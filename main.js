@@ -66,6 +66,10 @@ openMe.onclick = () => {
   coolBean.style.animationDelay = "1s";
   coolBean.style.animationFillMode = "forwards";
 
+  const height = hiddenTextContainer.offsetHeight;
+  const size = height/24;
+
+  hiddenText.style.fontSize = `${size}px`
   hiddenText.style.animationName = "fadeIn";
   hiddenText.style.animationDuration = "24s";
   hiddenText.style.animationDelay = "4s";
